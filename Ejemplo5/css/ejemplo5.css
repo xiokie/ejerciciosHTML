@@ -1,0 +1,21 @@
+h1{
+	font-family: verdana ;
+	color: red;
+	font-size: 35px;
+}
+h2{
+	font-family: verdana ;
+	color: grey;
+	font-size: 25px;
+}
+label{
+	font-family: verdana;
+	font-size: 14px;
+}
+.submit{
+	font-size: 14px;
+	color: white;
+	background-color: black;
+	border-radius: 5px;
+	border:none;
+}

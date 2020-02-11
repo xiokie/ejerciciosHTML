@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/ejemplo5.css">
+		<title>Ejercicio5</title>
+	</head>
+	<script type="text/javascript">
+	function enviado(){
+		alert("Información enviada");
+		return true;
+	}
+	</script>
+	<body style="background-color: #dddddd;">
+		<h1>Formulario Comida Mexicana</h1>
+		<h2>Pide tu orden</h2>
+
+			<form name="myForm" action="" method="GET"> <!--se puede utilizar RequestBin para simular el envio de datos, un POST empaqueta los datos al proceso se le llama serializar. UN FORM NO HACE PUT NI DELETE-->
+				<div>
+					<label>Platillo  </label><select name="platillo" required="true">
+						<option value="chilaquiles">Chilaquiles</option>
+						<option value="enchiladas">Enchiladas</option>
+						<option value="tamales">Tamales</option>
+						<option value="enmoladas">Enmoladas</option>
+					</select><br>
+				</div>
+				<div>
+					<label>Tamaño  </label><select name="tamanio">
+						<option value="chico">CHICO</option>
+						<option value="mediano">MEDIANO</option>
+						<option value="grande">GRANDE</option>
+					</select><br>
+				</div>
+				<div>
+					<input type="radio" name="picante" value="true"><label>Picante</label><br> <!-- con varios radioButton se les pone el mismo name para que solo agarre uno de tantos-->
+				</div>
+				<div>
+					<input type="radio" name="servicioADomicilio" value="true"><label>Servicio a domicilio</label><br>
+				</div>
+				<div>
+					<textarea name="comentarios" placeholder="Escribe que acompañamientos quieres o alguna especificación necesaria" rows="5" cols="50"></textarea>
+				</div>
+				<div>
+					<input type="submit" value="enviar" class="submit" onclick="return enviado()">
+				</div>
+			</form>
+		
+	</body>
+</html>
